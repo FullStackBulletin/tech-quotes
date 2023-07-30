@@ -1,4 +1,4 @@
-type AuthorDescription =
+export type AuthorDescription =
   'Artist' |
   'Author' |
   'Composer' |
@@ -14,11 +14,17 @@ type AuthorDescription =
   'Scientist' |
   'Software developer'
 
-interface Quote {
+export interface Quote {
   text: string
   author: string
   authorDescription: AuthorDescription
   authorUrl?: `https://en.wikipedia.org/wiki/${string}`
+}
+
+export interface QuoteWithIdAndLink {
+  id: number
+  quote: Quote
+  url: `https://fullStackbulletin.github.io/tech-quotes/${number}.json`
 }
 
 const quotes: Quote[] = [
