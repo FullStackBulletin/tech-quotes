@@ -32,9 +32,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
-      - uses: oven-sh/setup-bun@v1
+      - name: Use Node 18
+        uses: actions/setup-node@v3
         with:
-          bun-version: latest
+          node-version: 18.x
 
       - name: Use cached node_modules
         uses: actions/cache@v3
@@ -43,12 +44,17 @@ jobs:
           key: nodeModules-18-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
-        run: bun install
+        run: npm install
+        env:
+          CI: true
+
+      - name: Tests
+        run: npm test
         env:
           CI: true
 
       - name: Build project
-        run: bun scripts/build.ts
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
