@@ -36,11 +36,11 @@ const stats = {
   all: `${baseUrl}/quotes/all.json`,
   first: `${baseUrl}/quotes/0.json`,
   last: `${baseUrl}/quotes/${quotes.length - 1}.json`,
-  urlPrefix: baseUrl
+  urlPrefix: `${baseUrl}/quotes`
 }
 
-await writeFile(`${destPath}/stats.json`, JSON.stringify(stats, null, 2))
-console.log(`Written ${destPath}/stats.json`)
+await writeFile(`${quotesPath}/stats.json`, JSON.stringify(stats, null, 2))
+console.log(`Written ${quotesPath}/stats.json`)
 
 // Creates a JSON file for each quote and an all.json file with all the quotes
 function mapQuote (id: string, quote: RawQuote): Quote {
@@ -105,6 +105,16 @@ for (const author of authorsWithQuotes.values()) {
   console.log(`Written ${String(dest)}`)
   totalAuthors++
 }
+
+// creates stats.json for authors
+const authorsStats = {
+  total: totalAuthors,
+  all: `${baseUrl}/authors/all.json`,
+  urlPrefix: `${baseUrl}/authors`
+}
+
+await writeFile(`${authorsPath}/stats.json`, JSON.stringify(authorsStats, null, 2))
+console.log(`Written ${authorsPath}/stats.json`)
 
 // Create all.json for authors
 const allAuthors = {
