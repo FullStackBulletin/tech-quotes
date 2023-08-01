@@ -6,6 +6,7 @@ import slugify from 'slugify'
 import { parse } from 'yaml'
 import quotes, { type Quote, type Author, type AuthorDescription, type RawQuote, type AuthorWithQuotes } from '../src/quotes.js'
 
+const REPO_URL = 'https://github.com/FullStackBulletin/tech-quotes'
 const GH_PAGES_URL = 'https://fullStackbulletin.github.io/tech-quotes'
 const baseUrl = process.env.BASE_URL ?? GH_PAGES_URL
 
@@ -24,7 +25,7 @@ await Promise.all([
 // Creates an index.html file that redirects to the GitHub repo
 const index = `<html>
   <head>
-    <meta http-equiv="refresh" content="0; url=${GH_PAGES_URL}">
+    <meta http-equiv="refresh" content="0; url=${REPO_URL}">
   </head>
   <body></body>
 </html>`
