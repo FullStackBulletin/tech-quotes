@@ -12,7 +12,7 @@ export type AuthorDescription =
   'Military Officer' |
   'Physicist' |
   'Scientist' |
-  'Software developer'
+  'Software Developer'
 
 export interface RawQuote {
   text: string
@@ -170,7 +170,7 @@ const quotes: RawQuote[] = [
   {
     text: 'Software is like sex: It\'s better when it\'s free',
     authorName: 'Linus Torvalds',
-    authorDescription: 'Software developer',
+    authorDescription: 'Software Developer',
     authorWiki: 'https://en.wikipedia.org/wiki/Linus_Torvalds'
   },
   {
@@ -199,7 +199,7 @@ const quotes: RawQuote[] = [
   {
     text: 'The function of good software is to make the complex appear to be simple',
     authorName: 'Grady Booch',
-    authorDescription: 'Software developer',
+    authorDescription: 'Software Developer',
     authorWiki: 'https://en.wikipedia.org/wiki/Grady_Booch'
   },
   {
@@ -217,7 +217,7 @@ const quotes: RawQuote[] = [
   {
     text: 'To iterate is human, to recurse divine',
     authorName: 'L. Peter Deutsch',
-    authorDescription: 'Software developer',
+    authorDescription: 'Software Developer',
     authorWiki: 'https://en.wikipedia.org/wiki/L._Peter_Deutsch'
   },
   {
@@ -357,6 +357,168 @@ const quotes: RawQuote[] = [
     authorName: 'John Brunner',
     authorDescription: 'Author',
     authorWiki: 'https://en.wikipedia.org/wiki/John_Brunner'
+  },
+  {
+    text: 'Technology is best when it brings people together',
+    authorName: 'Matt Mullenweg',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Matt_Mullenweg'
+  },
+  {
+    text: 'The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past',
+    authorName: 'Tim Berners-Lee',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Tim_Berners-Lee'
+  },
+  {
+    text: 'It\'s not a faith in technology. It\'s faith in people',
+    authorName: 'Steve Jobs',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Steve_Jobs'
+  },
+  {
+    text: 'Technology is a useful servant but a dangerous master',
+    authorName: 'Christian Lous Lange',
+    authorDescription: 'Historian',
+    authorWiki: 'https://en.wikipedia.org/wiki/Christian_Lous_Lange'
+  },
+  {
+    text: 'Programming is the art of algorithm design and the craft of debugging errant code',
+    authorName: 'Ellen Ullman',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Ellen_Ullman'
+  },
+  {
+    text: 'If we want users to like our software, we should design it to behave like a likable person',
+    authorName: 'Alan Cooper',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Cooper'
+  },
+  {
+    text: 'Everybody should learn to program a computer because it teaches you how to think',
+    authorName: 'Steve Jobs',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Steve_Jobs'
+  },
+  {
+    text: 'Software and cathedrals are much the same — first we build them, then we pray',
+    authorName: 'Sam Redwine',
+    authorDescription: 'Computer Scientist'
+  },
+  {
+    text: 'Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program',
+    authorName: 'Linus Torvalds',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Linus_Torvalds'
+  },
+  {
+    text: 'You might not think that programmers are artists, but programming is an extremely creative profession. It’s logic-based creativity',
+    authorName: 'John Romero',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/John_Romero'
+  },
+  {
+    text: 'Programming is learned by writing programs',
+    authorName: 'Brian Kernighan',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Brian_Kernighan'
+  },
+  {
+    text: 'The most important property of a program is whether it accomplishes the intention of its user',
+    authorName: 'C.A.R. Hoare',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/C._A._R._Hoare'
+  },
+  {
+    text: 'The best error message is the one that never shows up',
+    authorName: 'Thomas Fuchs',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'There is always one more bug to fix',
+    authorName: 'Ellen Ullman',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Ellen_Ullman'
+  },
+  {
+    text: 'Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday\'s code',
+    authorName: 'Dan Salomon',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'If, at first, you do not succeed, call it version 1.0',
+    authorName: 'Khayri R.R. Woulfe',
+    authorDescription: 'Author'
+  },
+  {
+    text: 'The best performance improvement is the transition from the nonworking state to the working state',
+    authorName: 'J. Osterhout',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/John_Ousterhout'
+  },
+  {
+    text: 'The most important single aspect of software development is to be clear about what you are trying to build',
+    authorName: 'Bjarne Stroustrup',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Bjarne_Stroustrup'
+  },
+  {
+    text: 'Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away.',
+    authorName: 'Antoine de Saint-Exupery',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Antoine_de_Saint-Exup%C3%A9ry'
+  },
+  {
+    text: 'When to use iterative development? You should use iterative development only on projects that you want to succeed',
+    authorName: 'Martin Fowler',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Martin_Fowler_(software_engineer)'
+  },
+  {
+    text: 'The best way to predict the future is to invent it',
+    authorName: 'Alan Kay',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Kay'
+  },
+  {
+    text: 'The most disastrous thing that you can ever learn is your first programming language',
+    authorName: 'Alan Kay',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Kay'
+  },
+  {
+    text: 'Make it work, make it right, make it fast',
+    authorName: 'Kent Beck',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Kent_Beck'
+  },
+  {
+    text: 'Java is to JavaScript what car is to Carpet',
+    authorName: 'Chris Heilmann',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'Experience is the name everyone gives to their mistakes',
+    authorName: 'Oscar Wilde',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Oscar_Wilde'
+  },
+  {
+    text: 'First, solve the problem. Then, write the code',
+    authorName: 'John Johnson',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'Optimism is an occupational hazard of programming: feedback is the treatment',
+    authorName: 'Kent Beck',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Kent_Beck'
+  },
+  {
+    text: 'Simple things should be simple, complex things should be POSSIBLE',
+    authorName: 'Alan Kay',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Kay'
   }
 ]
 
