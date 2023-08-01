@@ -11,6 +11,13 @@ An API to get interesting tech-related quotes (powered by GitHub pages)
 
 The base URL of the API is `https://fullStackbulletin.github.io/tech-quotes`.
 
+API Documentation is available as OpenAPI specification:
+
+  - [OpenAPI definition (YAML)](https://fullStackbulletin.github.io/tech-quotes/openapi.yml)
+  - [OpenAPI definition (JSON)](https://fullStackbulletin.github.io/tech-quotes/openapi.json)
+
+[![Open API V3](https://img.shields.io/badge/open--API-in--editor-brightgreen.svg?style=flat&label=open-api-v3)](https://editor-next.swagger.io/?url=https%3A%2F%2FfullStackbulletin.github.io%2Ftech-quotes%2Fopenapi.yml)
+
 There are some endpoints available:
 
 ### `/quotes/stats.json`
@@ -114,7 +121,7 @@ Returns
 ```
 
 
-### `/authors/stats.json`
+### `/authors/stats.json`
 
 Gets statistics abouts the authors
 
@@ -188,13 +195,6 @@ Returns
     {
       "id": 31,
       "text": "Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway",
-      "author": {
-        "id": "andrew-s-tanenbaum",
-        "name": "Andrew S. Tanenbaum",
-        "description": "Computer Scientist",
-        "wiki": "https://en.wikipedia.org/wiki/Andrew_S._Tanenbaum",
-        "url": "https://fullStackbulletin.github.io/tech-quotes/authors/andrew-s-tanenbaum.json"
-      },
       "url": "https://fullStackbulletin.github.io/tech-quotes/quotes/31.json"
     }
   ]

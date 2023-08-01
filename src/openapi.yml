@@ -1,0 +1,234 @@
+openapi: 3.1.0
+
+info:
+  title: Tech Quotes API
+  version: 1.0.0
+  description: |-
+    A simple API to get inspiring tech quotes.
+
+    Source code on GitHub: https://github.com/FullStackBulletin/tech-quotes
+  license:
+    name: MIT
+    url: https://raw.githubusercontent.com/FullStackBulletin/tech-quotes/main/LICENSE
+
+servers:
+  - url: https://fullStackbulletin.github.io/tech-quotes
+    description: GitHub Pages
+
+tags:
+  - name: quotes
+    description: Quotes
+  - name: authors
+    description: Authors
+
+paths:
+  /quotes/stats.json:
+    get:
+      tags:
+        - quotes
+      summary: Get quotes stats
+      description: Get quotes stats
+      operationId: getQuotesStats
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuotesStats"
+  /quotes/all.json:
+    get:
+      tags:
+        - quotes
+      summary: Get all quotes
+      description: Get all quotes
+      operationId: getAllQuotes
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AllQuotes"
+  /quotes/{quoteId}.json:
+    get:
+      tags:
+        - quotes
+      summary: Get a single quote by ID
+      description: Get a single quote by ID
+      operationId: getQuote
+      parameters:
+        - in: path
+          name: quoteId
+          schema:
+            type: integer
+          required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Quote"
+  /authors/stats.json:
+    get:
+      tags:
+        - authors
+      summary: Get authors stats
+      description: Get authors stats
+      operationId: getAuthorsStats
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthorsStats"
+  /authors/all.json:
+    get:
+      tags:
+        - authors
+      summary: Get all authors
+      description: Get all authors
+      operationId: getAllAuthors
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AllAuthors"
+  /authors/{authorId}.json:
+    get:
+      tags:
+        - "authors"
+      summary: Get a single author by ID
+      description: Get a single author by ID
+      operationId: getAuthor
+      parameters:
+        - in: path
+          name: authorId
+          schema:
+            type: string
+          required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthorWithQuotes"
+
+components:
+  schemas:
+    QuoteWithoutAuthor:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Quote ID
+        text:
+          type: string
+          description: Quote text
+        url:
+          type: string
+          description: URL to retrieve the quote
+    Quote:
+      allOf:
+        - $ref: "#/components/schemas/QuoteWithoutAuthor"
+      type: object
+      properties:
+        author:
+          $ref: "#/components/schemas/Author"
+    Author:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Author ID
+        name:
+          type: string
+          description: Author name
+        description:
+          type: string
+          description: Author description
+        wiki:
+          type: string
+          description: URL to Wikipedia page
+          nullable: true
+        url:
+          type: string
+          description: URL to retrieve author
+    QuotesStats:
+      type: object
+      properties:
+        total:
+          type: integer
+          description: Total number of quotes
+        all:
+          type: string
+          description: URL to retrieve all quotes
+        first:
+          type: string
+          description: URL to retrieve first quote
+        last:
+          type: string
+          description: URL to retrieve last quote
+        urlPrefix:
+          type: string
+          description: URL prefix to retrieve quotes
+    AllQuotes:
+      type: object
+      properties:
+        metadata:
+          type: object
+          properties:
+            total:
+              type: integer
+              description: Total number of quotes
+            first:
+              type: integer
+              description: First id of a quote
+            last:
+              type: integer
+              description: Last id of a quote
+        quotes:
+          type: array
+          items:
+            $ref: "#/components/schemas/Quote"
+          description: the list of all quotes
+    AuthorsStats:
+      type: object
+      properties:
+        total:
+          type: integer
+          description: Total number of authors
+        all:
+          type: string
+          description: URL to retrieve all authors
+        urlPrefix:
+          type: string
+          description: URL prefix to retrieve authors
+    AllAuthors:
+      type: object
+      properties:
+        metadata:
+          type: object
+          properties:
+            total:
+              type: integer
+              description: Total number of authors
+        authors:
+          type: array
+          items:
+            type: string
+          description: the list of all author IDs
+    AuthorWithQuotes:
+      type: object
+      allOf:
+        - $ref: "#/components/schemas/Author"
+      properties:
+        quotes:
+          type: array
+          items:
+            $ref: "#/components/schemas/QuoteWithoutAuthor"

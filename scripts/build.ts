@@ -1,8 +1,9 @@
-import { writeFile } from 'node:fs/promises'
+import { writeFile, readFile, copyFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { mkdirp } from 'mkdirp'
 import slugify from 'slugify'
+import { parse } from 'yaml'
 import quotes, { type Quote, type Author, type AuthorDescription, type RawQuote, type AuthorWithQuotes } from '../src/quotes.js'
 
 const GH_PAGES_URL = 'https://fullStackbulletin.github.io/tech-quotes'
@@ -65,6 +66,11 @@ function makeAuthor (name: string, description: AuthorDescription, wiki?: `https
   }
 }
 
+function removeAuthorFromQuote (quote: Quote): Omit<Quote, 'author'> {
+  const { author, ...rest } = quote
+  return rest
+}
+
 const all = {
   metadata: {
     total: quotes.length,
@@ -86,11 +92,11 @@ for (const quote of all.quotes) {
 
   const authorEntry = authorsWithQuotes.get(quote.author.id)
   if (typeof authorEntry !== 'undefined') {
-    authorEntry.quotes.push(quote)
+    authorEntry.quotes.push(removeAuthorFromQuote(quote))
   } else {
     authorsWithQuotes.set(quote.author.id, {
       ...quote.author,
-      quotes: [quote]
+      quotes: [removeAuthorFromQuote(quote)]
     })
   }
 
@@ -126,3 +132,15 @@ const allAuthors = {
 
 await writeFile(`${authorsPath}/all.json`, JSON.stringify(allAuthors, null, 2))
 console.log(`Written ${authorsPath}/all.json`)
+
+// copy open api file and converts it to json
+const openApiPath = join(currentDir, '..', 'src', 'openapi.yml')
+const openApiDestYaml = join(destPath, 'openapi.yml')
+await copyFile(openApiPath, openApiDestYaml)
+console.log(`Written ${openApiDestYaml}`)
+
+const openApiYaml = await readFile(openApiPath, 'utf-8')
+const openApiJson = parse(openApiYaml)
+const openApiDestJson = join(destPath, 'openapi.json')
+await writeFile(openApiDestJson, JSON.stringify(openApiJson, null, 2))
+console.log(`Written ${openApiDestJson}`)
