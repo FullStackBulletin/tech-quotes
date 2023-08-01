@@ -519,6 +519,64 @@ const quotes: RawQuote[] = [
     authorName: 'Alan Kay',
     authorDescription: 'Computer Scientist',
     authorWiki: 'https://en.wikipedia.org/wiki/Alan_Kay'
+  },
+  {
+    text: 'Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.',
+    authorName: 'Martin Golding',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: "Programming is not about typing, it's about thinking",
+    authorName: 'Rich Hickey',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Rich_Hickey'
+  },
+  {
+    text: 'Any fool can write code that a computer can understand. Good programmers write code that humans can understand',
+    authorName: 'Martin Fowler',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Martin_Fowler'
+  },
+  {
+    text: 'Talk is cheap. Show me the code',
+    authorName: 'Linus Torvalds',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Linus_Torvalds'
+  },
+  {
+    text: 'The computer was born to solve problems that did not exist before',
+    authorName: 'Bill Gates',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Bill_Gates'
+  },
+  {
+    text: 'The amateur software engineer is always in search of magic',
+    authorName: 'Grady Booch',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Grady_Booch'
+  },
+  {
+    text: 'The best designers will use many design patterns that dovetail and intertwine to produce a greater whole',
+    authorName: 'Erich Gamma',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Erich_Gamma'
+  },
+  {
+    text: 'If it\'s not tested, it\'s broken',
+    authorName: 'Bruce Eckel',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Bruce_Eckel'
+  },
+  {
+    text: 'Give users what they actually want, not what they say they want',
+    authorName: 'Kathy Sierra',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Kathy_Sierra'
+  },
+  {
+    text: 'Debugging is like being the detective in a crime movie where you are also the murderer',
+    authorName: 'Filipe Fortes',
+    authorDescription: 'Software Developer'
   }
 ]
 
