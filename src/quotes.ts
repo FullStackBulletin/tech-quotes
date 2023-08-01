@@ -5,8 +5,10 @@ export type AuthorDescription =
   'Computer Scientist' |
   'Director' |
   'Entrepreneur' |
+  'Hacker' |
   'Historian' |
   'Inventor' |
+  'Linguist' |
   'Journalist' |
   'Mathematician' |
   'Military Officer' |
@@ -577,6 +579,281 @@ const quotes: RawQuote[] = [
     text: 'Debugging is like being the detective in a crime movie where you are also the murderer',
     authorName: 'Filipe Fortes',
     authorDescription: 'Software Developer'
+  },
+  {
+    text: 'Computing is kind of a mess. Your computer doesn\'t know where you are. It doesn\'t know what you\'re doing. It doesn\'t know what you know',
+    authorName: 'Larry Page',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Larry_Page'
+  },
+  {
+    text: 'JavaScript is the world\'s most misunderstood programming language',
+    authorName: 'Douglas Crockford',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Douglas_Crockford'
+  },
+  {
+    text: 'The cleaner and nicer the program, the faster it\'s going to run. And if it doesn\'t, it\'ll be easy to make it fast',
+    authorName: 'Joshua Bloch',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Joshua_Bloch'
+  },
+  {
+    text: 'Often, the most striking and innovative solutions come from realizing that your concept of the problem was wrong',
+    authorName: 'Eric S. Raymond',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Eric_S._Raymond'
+  },
+  {
+    text: 'It is often easier to ask for forgiveness than to ask for permission',
+    authorName: 'Grace Hopper',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Grace_Hopper'
+  },
+  {
+    text: 'You can divide our industry into two kinds of people: those who want to go work for a company to make it successful, and those who want to go work for a successful company',
+    authorName: 'Jamie Zawinski',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Jamie_Zawinski'
+  },
+  {
+    text: 'A language that doesn\'t affect the way you think about programming is not worth knowing',
+    authorName: 'Alan Perlis',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Perlis'
+  },
+  {
+    text: 'In the practical world of computing, it is rather uncommon that a program, once it performs correctly and satisfactorily, remains unchanged forever',
+    authorName: 'Niklaus Wirth',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Niklaus_Wirth'
+  },
+  {
+    text: 'Much of my work has come from being lazy',
+    authorName: 'John Backus',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/John_Backus'
+  },
+  {
+    text: 'For much of the Internet, the shortest path between two points doesn\'t exist',
+    authorName: 'Kevin Poulsen',
+    authorDescription: 'Hacker',
+    authorWiki: 'https://en.wikipedia.org/wiki/Kevin_Poulsen'
+  },
+  {
+    text: 'Creativity comes from applying things you learn in other fields to the field you work in',
+    authorName: 'Aaron Swartz',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Aaron_Swartz'
+  },
+  {
+    text: 'In JavaScript, there is a beautiful, elegant, highly expressive language that is buried under a steaming pile of good intentions and blunders',
+    authorName: 'Douglas Crockford',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Douglas_Crockford'
+  },
+  {
+    text: 'This is why I loved technology: if you used it right, it could give you power and privacy',
+    authorName: 'Cory Doctorow',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Cory_Doctorow'
+  },
+  {
+    text: 'Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.',
+    authorName: 'Alan Perlis',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Perlis'
+  },
+  {
+    text: 'If you can\'t understand the spec for a new technology, don\'t worry: nobody else will understand it either, and the technology won\'t be that important',
+    authorName: 'Joel Spolsky',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Joel_Spolsky'
+  },
+  {
+    text: 'Just because something is a standard doesn\'t mean it is the right choice for every application. Like XML, for example',
+    authorName: 'Douglas Crockford',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Douglas_Crockford'
+  },
+  {
+    text: 'To solve an interesting problem, start by finding a problem that is interesting to you',
+    authorName: 'Eric S. Raymond',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Eric_S._Raymond'
+  },
+  {
+    text: 'If you\'re not doing some things that are crazy, then you\'re doing the wrong things',
+    authorName: 'Larry Page',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Larry_Page'
+  },
+  {
+    text: 'We have to stop optimizing for programmers and start optimizing for users',
+    authorName: 'Jeff Atwood',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Jeff_Atwood'
+  },
+  {
+    text: 'Prolific programmers contribute to certain disaster',
+    authorName: 'Niklaus Wirth',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Niklaus_Wirth'
+  },
+  {
+    text: 'Any application that can be written in JavaScript, will eventually be written in JavaScript',
+    authorName: 'Jeff Atwood',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Jeff_Atwood'
+  },
+  {
+    text: 'Software is getting slower more rapidly than hardware becomes faster',
+    authorName: 'Niklaus Wirth',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Niklaus_Wirth'
+  },
+  {
+    text: 'Unix was not designed to stop you from doing stupid things, because that would also stop you from doing clever things',
+    authorName: 'Douglas Gwyn',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'The most damaging phrase in the language is: "It\'s always been done that way"',
+    authorName: 'Grace Hopper',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Grace_Hopper'
+  },
+  {
+    text: 'Peers can be the best teachers, because they\'re the ones that remember what it\'s like to not understand',
+    authorName: 'Peter Norvig',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Peter_Norvig'
+  },
+  {
+    text: 'From then on, when anything went wrong with a computer, we said it had bugs in it',
+    authorName: 'Grace Hopper',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Grace_Hopper'
+  },
+  {
+    text: 'Many people tend to look at programming styles and languages like religions: if you belong to one, you cannot belong to others. But this analogy is another fallacy',
+    authorName: 'Niklaus Wirth',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Niklaus_Wirth'
+  },
+  {
+    text: 'It is hard to write even the smallest piece of code correctly',
+    authorName: 'Joshua Bloch',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Joshua_Bloch'
+  },
+  {
+    text: 'It isn\'t enough to think outside the box. Thinking is passive. Get used to acting outside the box',
+    authorName: 'Tim Ferriss',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Tim_Ferriss'
+  },
+  {
+    text: 'Once you get to naming your laptop, you know that you\'re really having a deep relationship with it',
+    authorName: 'Cory Doctorow',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Cory_Doctorow'
+  },
+  {
+    text: 'Common programmer thought pattern: there are only three numbers: 0, 1, and n',
+    authorName: 'Joel Spolsky',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Joel_Spolsky'
+  },
+  {
+    text: 'There\'s a good part of Computer Science that\'s like magic. Unfortunately there\'s a bad part of Computer Science that\'s like religion',
+    authorName: 'Hal Abelson',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Hal_Abelson'
+  },
+  {
+    text: 'Smart data structures and dumb code works a lot better than the other way around',
+    authorName: 'Eric S. Raymond',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Eric_S._Raymond'
+  },
+  {
+    text: 'No computer is ever going to ask a new, reasonable question. It takes trained people to do that',
+    authorName: 'Grace Hopper',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Grace_Hopper'
+  },
+  {
+    text: 'Start out by making 100 users really happy, rather than a lot more users only a little happy',
+    authorName: 'Paul Buchheit',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Paul_Buchheit'
+  },
+  {
+    text: 'What is the most important thing you could be working on in the world right now? ... And if you\'re not working on that, why aren\'t you?',
+    authorName: 'Aaron Swartz',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Aaron_Swartz'
+  },
+  {
+    text: 'Teaching peers is one of the best ways to develop mastery',
+    authorName: 'Jeff Atwood',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Jeff_Atwood'
+  },
+  {
+    text: 'No one should do a job he can do in his sleep',
+    authorName: 'Cory Doctorow',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Cory_Doctorow'
+  },
+  {
+    text: 'Nobody is going to pour truth into your brain. It\'s something you have to find out for yourself',
+    authorName: 'Noam Chomsky',
+    authorDescription: 'Linguist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Noam_Chomsky'
+  },
+  {
+    text: 'The computer revolution is a revolution in the way we think and in the way we express what we think',
+    authorName: 'Hal Abelson',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Hal_Abelson'
+  },
+  {
+    text: 'When you choose a language, you\'re choosing more than a set of technical trade-offs, you\'re choosing a community',
+    authorName: 'Joshua Bloch',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Joshua_Bloch'
+  },
+  {
+    text: 'JavaScript is the only language that I\'m aware of that people feel they don\'t need to learn before they start using it',
+    authorName: 'Douglas Crockford',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Douglas_Crockford'
+  },
+  {
+    text: 'Almost everyone who has had an idea that\'s somewhat revolutionary or wildly successful was first told they\'re insane',
+    authorName: 'Larry Page',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Larry_Page'
+  },
+  {
+    text: 'One can steal ideas, but no one can steal execution or passion',
+    authorName: 'Tim Ferriss',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Tim_Ferriss'
+  },
+  {
+    text: 'If everything you do works, then you\'re not taking many risks and probably aren\'t innovating either',
+    authorName: 'Paul Buchheit',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Paul_Buchheit'
+  },
+  {
+    text: 'It turns out the Internet is this amazing resource for everyone who has access to it',
+    authorName: 'Alexis Ohanian',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alexis_Ohanian'
   }
 ]
 
