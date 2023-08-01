@@ -4,6 +4,7 @@ export type AuthorDescription =
   'Composer' |
   'Computer Scientist' |
   'Director' |
+  'Engineer' |
   'Entrepreneur' |
   'Hacker' |
   'Historian' |
@@ -854,6 +855,115 @@ const quotes: RawQuote[] = [
     authorName: 'Alexis Ohanian',
     authorDescription: 'Entrepreneur',
     authorWiki: 'https://en.wikipedia.org/wiki/Alexis_Ohanian'
+  },
+  {
+    text: 'Being a young programmer today must be awful—you can choose 20 different programming languages, dozens of framework and operating systemsand you\'re paralyzed by choice',
+    authorName: 'Joe Armstrong',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Joe_Armstrong_(programmer)'
+  },
+  {
+    text: 'In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them',
+    authorName: 'Andrew Hunt',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andy_Hunt_(author)'
+  },
+  {
+    text: 'Testing leads to failure, and failure leads to understanding',
+    authorName: 'Burt Rutan',
+    authorDescription: 'Engineer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Burt_Rutan'
+  },
+  {
+    text: 'Programming isn\'t about what you know; it\'s about what you can figure out',
+    authorName: 'Chris Pine',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'If you optimize everything, you will always be unhappy',
+    authorName: 'Donald Knuth',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Donald_Knuth'
+  },
+  {
+    text: 'If debugging is the process of removing bugs, then programming must be the process of putting them in',
+    authorName: 'E.W. Dijkstra',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/E._W._Dijkstra'
+  },
+  {
+    text: 'Coding isn\'t the poor handmaiden of design or analysis. Coding is where your fuzzy ideas awaken in the harsh dawn of reality',
+    authorName: 'Kent Beck',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Kent_Beck'
+  },
+  {
+    text: 'Inside every well-written large program is a well-written small program',
+    authorName: 'C.A.R. Hoare',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/C._A._R._Hoare'
+  },
+  {
+    text: 'So much complexity in software comes from trying to make one thing do two things',
+    authorName: 'Ryan Singer',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'Code is like humor. When you have to explain it, it\'s bad',
+    authorName: 'Cory House',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'The more I study, the more insatiable do I feel my genius for it to be',
+    authorName: 'Ada Lovelace',
+    authorDescription: 'Mathematician',
+    authorWiki: 'https://en.wikipedia.org/wiki/Ada_Lovelace'
+  },
+  {
+    text: 'There are only two hard things in Computer Science: cache invalidation and naming things',
+    authorName: 'Phil Karlton',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'All programming languages are shit. But the good ones fertilize your mind',
+    authorName: 'Reginald Braithwaite',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim',
+    authorName: 'E.W. Dijkstra',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/E._W._Dijkstra'
+  },
+  {
+    text: 'Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter',
+    authorName: 'Eric S. Raymond',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Eric_S._Raymond'
+  },
+  {
+    text: 'Programming languages, like pizza, come in only two sizes: too big and too small',
+    authorName: 'Eric S. Raymond',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Eric_S._Raymond'
+  },
+  {
+    text: 'Computer Science is no more about computers than astronomy is about telescopes',
+    authorName: 'Richard E. Pattis',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Richard_E._Pattis'
+  },
+  {
+    text: 'Languages that try to disallow idiocy become themselves idiotic',
+    authorName: 'Rob Pike',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Rob_Pike'
+  },
+  {
+    text: 'Perl: The only language that looks the same before and after RSA encryption',
+    authorName: 'Keith Bostic',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Keith_Bostic_(software_engineer)'
   }
 ]
 
