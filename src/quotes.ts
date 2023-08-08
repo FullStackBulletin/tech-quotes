@@ -11,8 +11,10 @@ export type AuthorDescription =
   'Inventor' |
   'Linguist' |
   'Journalist' |
+  'Martial Artist' |
   'Mathematician' |
   'Military Officer' |
+  'Philosopher' |
   'Physicist' |
   'Scientist' |
   'Software Developer'
@@ -964,6 +966,143 @@ const quotes: RawQuote[] = [
     authorName: 'Keith Bostic',
     authorDescription: 'Software Developer',
     authorWiki: 'https://en.wikipedia.org/wiki/Keith_Bostic_(software_engineer)'
+  },
+  {
+    text: 'Not everything I say is correct. It\'s correct modulo the little details you\'re going to have to worry about',
+    authorName: 'John Hopcroft',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/John_Hopcroft'
+  },
+  {
+    text: 'There is nothing in the programming field more despicable than an undocumented program',
+    authorName: 'Edward Yourdon',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Edward_Yourdon'
+  },
+  {
+    text: 'Beware of bugs in the above code; I have only proved it correct, not tried it',
+    authorName: 'Donald Knuth',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Donald_Knuth'
+  },
+  {
+    text: 'Good programmers don\'t just write programs. They build a working vocabulary',
+    authorName: 'Guy Steele',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Guy_L._Steele_Jr.'
+  },
+  {
+    text: 'In carpentry, you measure twice and cut once. In software development, you never measure and make cuts until you run out of time',
+    authorName: 'Adam Morse',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'Hofstadter\'s Law: It always takes longer than you expect, even when you take into account Hofstadter\'s Law',
+    authorName: 'Douglas Hofstadter',
+    authorDescription: 'Physicist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Douglas_Hofstadter'
+  },
+  {
+    text: 'What we have to learn to do, we learn by doing',
+    authorName: 'Aristotle',
+    authorDescription: 'Philosopher',
+    authorWiki: 'https://en.wikipedia.org/wiki/Aristotle'
+  },
+  {
+    text: 'One day, you\'ll turn off the feature that emails you every time someone buys your software. That\'s a huge milestone',
+    authorName: 'Joel Spolsky',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Joel_Spolsky'
+  },
+  {
+    text: 'Somebody finds the problem, and somebody else understands it. And I\'ll go on record as saying that finding it is the bigger challenge',
+    authorName: 'Linus Torvalds',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Linus_Torvalds'
+  },
+  {
+    text: 'Within a computer natural language is unnatural',
+    authorName: 'Alan Perlis',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Perlis'
+  },
+  {
+    text: 'I love deadlines. I like the whooshing sound they make as they fly by',
+    authorName: 'Douglas Adams',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Douglas_Adams'
+  },
+  {
+    text: 'When I am working on a problem, I never think about beauty. I think only of how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong',
+    authorName: 'R. Buckminster Fuller',
+    authorDescription: 'Inventor',
+    authorWiki: 'https://en.wikipedia.org/wiki/R._Buckminster_Fuller'
+  },
+  {
+    text: 'Design and programming are human activities; forget that and all is lost',
+    authorName: 'Bjarne Stroustrup',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Bjarne_Stroustrup'
+  },
+  {
+    text: 'Most of the biggest problems in software are problems of misconception',
+    authorName: 'Rich Hickey',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Rich_Hickey'
+  },
+  {
+    text: 'After more than 30 years of programming, we ought to know that the design of complex software is inherently difficult',
+    authorName: 'Niklaus Wirth',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Niklaus_Wirth'
+  },
+  {
+    text: 'If we wish to count lines of code, we should not regard them as "lines produced" but as "lines spent"',
+    authorName: 'E.W. Dijkstra',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/E._W._Dijkstra'
+  },
+  {
+    text: 'Working ten hour days allows you to fall behind twice as fast as you could working five hour days',
+    authorName: 'Isaac Asimov',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Isaac_Asimov'
+  },
+  {
+    text: 'Measuring programming progress by lines of code is like measuring aircraft building progress by weight',
+    authorName: 'Bill Gates',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Bill_Gates'
+  },
+  {
+    text: 'The designer of a new kind of system must participate fully in the implementation',
+    authorName: 'Donald Knuth',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Donald_Knuth'
+  },
+  {
+    text: 'The only way to learn a new programming language is by writing programs in it',
+    authorName: 'Dennis Ritchie',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Dennis_Ritchie'
+  },
+  {
+    text: 'Anyone who considers arithmetical methods of producing random digits is, of course, in a state of sin',
+    authorName: 'John Von Neumann',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/John_von_Neumann'
+  },
+  {
+    text: 'We shall do a much better programming job, provided we approach the task with a full appreciation of its tremendous difficulty, provided that we respect the intrinsic limitations of the human mind and approach the task as very humble programmers',
+    authorName: 'Alan Turing',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alan_Turing'
+  },
+  {
+    text: 'Learn the principle, abide by the principle, and dissolve the principle',
+    authorName: 'Bruce Lee',
+    authorDescription: 'Martial Artist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Bruce_Lee'
   }
 ]
 
