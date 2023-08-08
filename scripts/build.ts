@@ -33,6 +33,17 @@ const index = `<html>
 await writeFile(`${destPath}/index.html`, index)
 console.log(`Written ${destPath}/index.html`)
 
+// Creates a 404.html file that says not found
+const fourOhFour = `<html>
+  <head>
+    <title>404 - Not Found</title>
+  </head>
+  <body>Not found</body>
+</html>`
+
+await writeFile(`${destPath}/404.html`, fourOhFour)
+console.log(`Written ${destPath}/404.html`)
+
 const stats = {
   total: quotes.length,
   all: `${baseUrl}/quotes/all.json`,
