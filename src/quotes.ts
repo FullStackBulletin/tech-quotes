@@ -3,6 +3,7 @@ export type AuthorDescription =
   'Author' |
   'Composer' |
   'Computer Scientist' |
+  'Designer' |
   'Director' |
   'Engineer' |
   'Entrepreneur' |
@@ -1103,6 +1104,52 @@ const quotes: RawQuote[] = [
     authorName: 'Bruce Lee',
     authorDescription: 'Martial Artist',
     authorWiki: 'https://en.wikipedia.org/wiki/Bruce_Lee'
+  },
+  {
+    text: 'Remember, to learn and not to do is really not to learn. To know and not to do is really not to know',
+    authorName: 'Stephen Covey',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Stephen_Covey'
+  },
+  {
+    text: 'Technology like art is a soaring exercise of the human imagination',
+    authorName: 'Daniel Bell',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Daniel_Bell'
+  },
+  {
+    text: 'Let\'s go invent tomorrow instead of worrying about what happened yesterday',
+    authorName: 'Steve Jobs',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Steve_Jobs'
+  },
+  {
+    text: 'The great growling engine of change - technology',
+    authorName: 'Alvin Toffler',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/Alvin_Toffler'
+  },
+  {
+    text: 'Innovation is the outcome of a habit, not a random act',
+    authorName: 'Sukant Ratnakar',
+    authorDescription: 'Author'
+  },
+  {
+    text: 'The technology you use impresses no one. The experience you create with it is everything',
+    authorName: 'Sean Gerety',
+    authorDescription: 'Designer'
+  },
+  {
+    text: 'It\'s not that we use technology, we live technology',
+    authorName: 'Godfrey Reggio',
+    authorDescription: 'Director',
+    authorWiki: 'https://en.wikipedia.org/wiki/Godfrey_Reggio'
+  },
+  {
+    text: 'The real problem is not whether machines think but whether men do.',
+    authorName: 'B.F. Skinner',
+    authorDescription: 'Author',
+    authorWiki: 'https://en.wikipedia.org/wiki/B._F._Skinner'
   }
 ]
 
