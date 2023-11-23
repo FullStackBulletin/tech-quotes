@@ -1150,6 +1150,18 @@ const quotes: RawQuote[] = [
     authorName: 'B.F. Skinner',
     authorDescription: 'Author',
     authorWiki: 'https://en.wikipedia.org/wiki/B._F._Skinner'
+  },
+  {
+    text: 'Fight Features … The only way to make software secure, reliable, and fast is to make it small',
+    authorName: 'Andrew S. Tanenbaum',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andrew_S._Tanenbaum'
+  },
+  {
+    text: 'The nice thing about standards is that you have so many to choose from',
+    authorName: 'Andrew S. Tanenbaum',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andrew_S._Tanenbaum'
   }
 ]
 
