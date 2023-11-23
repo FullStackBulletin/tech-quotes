@@ -1,6 +1,6 @@
 {
   "name": "tech-quotes",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An API to get interesting tech-related quotes (powered by GitHub pages)",
   "main": "index.js",
   "type": "module",
