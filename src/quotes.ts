@@ -1162,6 +1162,11 @@ const quotes: RawQuote[] = [
     authorName: 'Andrew S. Tanenbaum',
     authorDescription: 'Computer Scientist',
     authorWiki: 'https://en.wikipedia.org/wiki/Andrew_S._Tanenbaum'
+  },
+  {
+    text: 'Half of the battle of building performant software is caring enough to look',
+    authorName: 'AJ Stuyvenberg',
+    authorDescription: 'Engineer'
   }
 ]
 
