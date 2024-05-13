@@ -9,16 +9,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Use Node 18
+      - name: Use Node 22
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: 22.x
 
       - name: Use cached node_modules
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: nodeModules-18-${{ hashFiles('**/package-lock.json') }}
+          key: nodeModules-22-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies
         run: npm install

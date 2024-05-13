@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "eslint scripts/**/*.ts src/**/*.ts && tsc",
-    "build": "rm -rf dist && ts-node-esm scripts/build.ts"
+    "build": "rm -rf dist && node --import tsx scripts/build.ts"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "mkdirp": "^3.0.1",
     "slugify": "^1.6.6",
-    "ts-node": "^10.9.1",
+    "tsx": "^4.10.2",
     "typescript": "^5.1.6",
     "yaml": "^2.3.1"
   }
