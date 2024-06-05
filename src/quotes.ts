@@ -1167,6 +1167,11 @@ const quotes: RawQuote[] = [
     text: 'Half of the battle of building performant software is caring enough to look',
     authorName: 'AJ Stuyvenberg',
     authorDescription: 'Engineer'
+  },
+  {
+    text: 'The thing is, you can\'t fake drive. If you try to, you can easily burnout',
+    authorName: 'Sophia Turner',
+    authorDescription: 'Engineer'
   }
 ]
 
