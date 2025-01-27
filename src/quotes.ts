@@ -18,7 +18,8 @@ export type AuthorDescription =
   'Philosopher' |
   'Physicist' |
   'Scientist' |
-  'Software Developer'
+  'Software Developer' |
+  'Ethnographer'
 
 export interface RawQuote {
   text: string
@@ -1171,6 +1172,23 @@ const quotes: RawQuote[] = [
   {
     text: 'The thing is, you can\'t fake drive. If you try to, you can easily burnout',
     authorName: 'Sophia Turner',
+    authorDescription: 'Engineer'
+  },
+  {
+    text: 'Computer Science is no more about computers than astronomy is about telescopes',
+    authorName: 'E.W. Dijkstra',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/E._W._Dijkstra'
+  },
+  {
+    text: 'Progress is man\'s ability to complicate simplicity',
+    authorName: 'Thor Heyerdahl',
+    authorDescription: 'Ethnographer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Thor_Heyerdahl'
+  },
+  {
+    text: 'Don\'t shoot a fly with a cannon',
+    authorName: 'Paolo Insogna',
     authorDescription: 'Engineer'
   }
 ]
