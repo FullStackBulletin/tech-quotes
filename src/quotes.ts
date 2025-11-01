@@ -1190,6 +1190,105 @@ const quotes: RawQuote[] = [
     text: 'Don\'t shoot a fly with a cannon',
     authorName: 'Paolo Insogna',
     authorDescription: 'Engineer'
+  },
+  {
+    text: 'The essential part of any program, the theory of it, is something that could not conceivably be expressed, but is inextricably bound to human beings.',
+    authorName: 'Peter Naur',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Peter_Naur'
+  },
+  {
+    text: 'The most powerful tool we have as developers is automation',
+    authorName: 'Scott Hanselman',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'The only way to go fast, is to go well',
+    authorName: 'Robert C. Martin',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Robert_C._Martin'
+  },
+  {
+    text: 'Controlling complexity is the essence of computer programming',
+    authorName: 'Brian Kernighan',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Brian_Kernighan'
+  },
+  {
+    text: 'If you can\'t deploy your service, it\'s not done',
+    authorName: 'Jez Humble',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'One of my most productive days was throwing away 1000 lines of code',
+    authorName: 'Ken Thompson',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Ken_Thompson'
+  },
+  {
+    text: 'Data trumps intuition',
+    authorName: 'Peter Norvig',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Peter_Norvig'
+  },
+  {
+    text: 'Choose boring technology',
+    authorName: 'Dan McKinley',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'Shipping first-time code is like going into debt. A little debt speeds development so long as it is paid back promptly with refactoring',
+    authorName: 'Ward Cunningham',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Ward_Cunningham'
+  },
+  {
+    text: 'Design is not just what it looks like and feels like. Design is how it works',
+    authorName: 'Steve Jobs',
+    authorDescription: 'Entrepreneur',
+    authorWiki: 'https://en.wikipedia.org/wiki/Steve_Jobs'
+  },
+  {
+    text: 'A little duplication is better than a little dependency',
+    authorName: 'John Ousterhout',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/John_Ousterhout'
+  },
+  {
+    text: 'The purpose of computing is insight, not numbers',
+    authorName: 'Richard Hamming',
+    authorDescription: 'Mathematician',
+    authorWiki: 'https://en.wikipedia.org/wiki/Richard_Hamming'
+  },
+  {
+    text: 'Any organization that designs a system will produce a design whose structure is a copy of the organization\'s communication structure',
+    authorName: 'Melvin Conway',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Melvin_Conway'
+  },
+  {
+    text: 'Adding manpower to a late software project makes it later',
+    authorName: 'Frederick P. Brooks Jr.',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Fred_Brooks'
+  },
+  {
+    text: 'The future is uncertain and you will never know less than you know right now',
+    authorName: 'Sandi Metz',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Sandi_Metz'
+  },
+  {
+    text: 'The problem with poorly designed small applications is that if they are successful, they grow up to be poorly designed big applications',
+    authorName: 'Sandi Metz',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Sandi_Metz'
+  },
+  {
+    text: 'The first way design fails is due to lack of it',
+    authorName: 'Sandi Metz',
+    authorDescription: 'Software Developer',
+    authorWiki: 'https://en.wikipedia.org/wiki/Sandi_Metz'
   }
 ]
 

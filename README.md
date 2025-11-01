@@ -205,6 +205,25 @@ Returns
 
 If you want to suggest a new tech quote here's how you can do that.
 
+### Using Claude Code
+
+If you're using [Claude Code](https://claude.ai/code), there's a convenient slash command available:
+
+```bash
+/add-quote
+```
+
+This command will guide you through the process of adding a new quote, including:
+- Verifying the quote is authentic and correctly attributed using web search
+- Checking for duplicate quotes
+- Checking for existing authors to ensure consistency
+- Researching the author and finding the appropriate classification
+- Adding the quote to `src/quotes.ts`
+- Running tests and building the static API files
+- Verifying the quote was added successfully
+
+### Manual Process
+
 - [Fork this repository](https://github.com/FullStackBulletin/tech-quotes/fork)
 - Edit the file [`src/quotes.ts`](/src/quotes.ts) and append the new fact at the bottom (make sure to follow the spec provided by the specific TypeScript types).
 - Run `npm run test && npm run build`
